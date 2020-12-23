@@ -1,0 +1,63 @@
+.main {
+  background-color: #eebd71;
+}
+.second {
+  background-color: #71a2ee;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+}
+
+footer ul li {
+  display: block;
+  list-style: none;
+  float: right;
+}
+
+footer p {
+  float: left;
+}
+
+footer a,
+footer p {
+  color: #fff;
+  vertical-align: middle;
+}
+@keyframes colorfun {
+  0% {
+    color: black;
+  }
+  25% {
+    color: #71a2ee;
+  }
+  50% {
+    color: #eebd71;
+  }
+  75% {
+    color: #44f3da;
+  }
+  100% {
+    color: black;
+  }
+}
+.crazy-text {
+  animation-name: colorfun;
+  animation-iteration-count: 100;
+  animation-duration: 20s;
+}
+
+/********************
+MEDIA QUERIES
+********************/
+@media screen and (max-width: 776px) {
+  .features img {
+    max-width: 90%;
+    margin: auto;
+  }
+}
